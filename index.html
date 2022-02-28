@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css" integrity="sha512-f2MWjotY+JCWDlE0+QAshlykvZUtIm35A6RHwfYZPdxKgLJpL8B+VVxjpHJwZDsZaWdyHVhlIHoblFYGkmrbhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./aos.css">
+    <link rel="stylesheet" href="./swiper.css">
+    <link rel="stylesheet" href="./slick.css">
+    <link rel="stylesheet" href="./slick-theme.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="./aos.js"></script>
+    <script src="./swiper.esm.bundle.js"></script>
+    <script src="./swiper.esm.js"></script>
+    <script src="./slick.min.js"></script>
+    <script src="/slick.js"></script>
+    <script src="./swiper.js"></script>
+    <script src="./common.js"></script>
+</head>
+<body>
+    <!-- header 영역 -->
+    <header>
+        <div class="hd_inner">
+            <h1 class="logo">
+                <a href="#">
+                    <img src="./img/main_logo.png" alt="">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="#">이월드 소개</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">운영시간</a></li>
+                            <li><a href="#">이용요금</a></li>
+                            <li><a href="#">할인혜택</a></li>
+                            <li><a href="#">식당가</a></li>
+                            <li><a href="#">기프트샵</a></li>
+                            <li><a href="#">게임샵</a></li>
+                            <li><a href="#">편의시절</a></li>
+                            <li><a href="#">교통 및 주차 안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">놀이시설</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">안내지도</a></li>
+                            <li><a href="#">판타지월드</a></li>
+                            <li><a href="#">매직월드</a></li>
+                            <li><a href="#">어드벤처월드</a></li>
+                            <li><a href="#">다이나믹월드</a></li>
+                            <li><a href="#">83타워 스카이가든</a></li>
+                            <li><a href="#">놀이시설 운휴정보</a></li>
+                            <li><a href="#">동물농장</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">행사와 축제</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">행사일정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">89타워</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">83타워 안내</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">컨텐츠</a></li>
+                            <li><a href="#">레스토랑 / 카페</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">소통서비스</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">연간회원 안내</a></li>
+                            <li><a href="#">연간회원 FAQ</a></li>
+                            <li><a href="#">단체이용 안내</a></li>
+                            <li><a href="#">현장학습 신청서</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="person_mo">
+                    <ul class="ps_list">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li class="leng">
+                            <a href="#">KOR</a>
+                            <ul class="leng_list">
+                                <li><a href="#">KOR</a></li>
+                                <li><a href="#">ENG</a></li>
+                                <li><a href="#">JPN</a></li>
+                                <li><a href="#">CHN</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="person">
+                <ul class="ps_list">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li class="leng">
+                        <a href="#">KOR</a>
+                        <ul class="leng_list">
+                            <li><a href="#">KOR</a></li>
+                            <li><a href="#">ENG</a></li>
+                            <li><a href="#">JPN</a></li>
+                            <li><a href="#">CHN</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="ham">
+            햄버거
+        </button>
+        <!-- <button class="close">
+            취소
+        </button> -->
+    </header>
+    <!-- banner 영역 -->
+    <section class="banner">
+        <div class="banner_inner swiper-container swiper1">
+            <ul class="img_slide swiper-wrapper">
+                <li class="slide_img swiper-slide">
+                    <a href="#">
+                        <img src="./img/cocomong_bg.png" alt="">
+                    </a>
+                </li>
+                <li class="slide_img swiper-slide">
+                    <a href="#">
+                        <img src="./img/banner4.png" alt="">
+                    </a>
+                </li>
+                <li class="slide_img swiper-slide">
+                    <a href="#">
+                        <img src="./img/kakao_ban.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- guide 영역 -->
+    <section class="guide">
+        <div class="guide_inner">
+            <div class="quick">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/ticket_Before.png" alt="" class="quick_1">
+                        </a>
+                        <a href="#"><p class="q_text">예약하기</p></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/vip_Before.png" alt="" class="quick_1">
+                        </a>
+                        <a href="#"><p class="q_text">연간회원</p></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/rest_Before.png" alt="" class="quick_1">
+                        </a>
+                        <a href="#"><p class="q_text">식당안내</p></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/parking_Before.png" alt="" class="quick_1">
+                        </a>
+                        <a href="#"><p class="q_text">주차안내</p></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="time">
+                <div class="time_img">
+                    <img src="./img/open_leave.png" alt="">
+                </div>
+                <div class="time_1">
+                    <div class="weekday">
+                        <p>평일 (월 ~  목) <span>10:30 ~ 21:00</span></p>
+                    </div>
+                    <div class="weekend">
+                        <p>주말 및 공휴일 <span>10:00 ~ 22:00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- discount 영역 -->
+    <section class="discount">
+        <div class="dis_inner">
+            <div class="title">
+                <h2>나에게 맞는 혜택은?</h2>
+                <p>현재 진행중인 할인혜택 입니다.</p>
+            </div>
+            <div class="dis_list">
+                <div class="dis_list_top">
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/kakao_pay.png" alt="">
+                            <p>
+                                자유이용권 40% 등
+                                <span>카카오페이 전용 프로모션</span>
+                            </p>
+                            
+                        </a>
+                    </div>
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/birth.png" alt="">
+                            <p>
+                                자유이용권 20% 동반2인
+                                <span>이월드 고객회원 생일 감사이벤트</span>
+                            </p>
+                            
+                        </a>
+                    </div>
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/tiger.png" alt="">
+                            <p>
+                                자유이용권 30%
+                                <span>국방부 X 이월드 병역의무자 감사이벤트</span>
+                            </p>
+                            
+                        </a>
+                    </div>
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/logo.png" alt="">
+                            <p>
+                                자유이용권 20%
+                                <span>대구시티투어 이용객 할인이벤트</span>
+                            </p>
+                            
+                        </a>
+                    </div>
+                </div>
+                <div class="dis_list_bot">
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/card.png" alt="">
+                            <p>
+                                자유이용권 40% 등
+                                <span>카카오페이 전용 프로모션</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/card.svg" alt="">
+                            <p>
+                                자유이용권 최대 50%
+                                <span>이월드 제휴카드 할인이벤트</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/bears.png" alt="">
+                            <p>
+                                자유이용권 30%
+                                <span>베어스타운 회원 이벤트</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/kensington.png" alt="">
+                            <p>
+                                자유이용권 40% 등<span>카카오페이 전용 프로모션</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="discount_m">
+        <div class="dis_inner_m">
+            <div class="title">
+                <h2>나에게 맞는 혜택은?</h2>
+                <p>현재 진행중인 할인혜택 입니다.</p>
+            </div>
+            <div class="dis_list">
+                <div class="dis_list_top">
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/kakao_pay.png" alt="">
+                            <p>
+                                자유이용권 40% 등
+                                <span>카카오페이 전용 프로모션</span>
+                            </p>
+                            
+                        </a>
+                    </div>
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/birth.png" alt="">
+                            <p>
+                                자유이용권 20% 동반2인
+                                <span>이월드 고객회원 생일 감사이벤트</span>
+                            </p>
+                            
+                        </a>
+                    </div>
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/tiger.png" alt="">
+                            <p>
+                                자유이용권 30%
+                                <span>국방부 X 이월드 병역의무자 감사이벤트</span>
+                            </p>
+                            
+                        </a>
+                    </div>
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/logo.png" alt="">
+                            <p>
+                                자유이용권 20%
+                                <span>대구시티투어 이용객 할인이벤트</span>
+                            </p>
+                            
+                        </a>
+                    </div>
+                </div>
+                <div class="dis_list_bot">
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/card.png" alt="">
+                            <p>
+                                자유이용권 40% 등
+                                <span>카카오페이 전용 프로모션</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/card.svg" alt="">
+                            <p>
+                                자유이용권 최대 50%
+                                <span>이월드 제휴카드 할인이벤트</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/bears.png" alt="">
+                            <p>
+                                자유이용권 30%
+                                <span>베어스타운 회원 이벤트</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="dis_box">
+                        <a href="#">
+                            <img src="./img/kensington.png" alt="">
+                            <p>
+                                자유이용권 40% 등<span>카카오페이 전용 프로모션</span>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- play 영역 -->
+    <section class="play swiper swiper-container swiper2">
+            <div class="title">
+                <h2>보기만 해도 신나는 기구들!</h2>
+                <p>다양한 기구들을 만나보세요.</p>
+            </div>
+            <div class="play_list swiper-wrapper">
+                <div class="play_img swiper-slide">
+                    <a href="#">
+                        <img src="./img/biking.png" alt="">
+                    </a>
+                </div>
+                <div class="play_img swiper-slide">
+                    <a href="#">
+                        <img src="./img/ranger.png" alt="">
+                    </a>
+                </div>
+                <div class="play_img swiper-slide">
+                    <a href="#">
+                        <img src="./img/tam.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide play_img">
+                    <a href="#">
+                        <img src="./img/coco_play.png" alt="">
+                    </a>
+                </div>
+                <div class="play_img swiper-slide">
+                    <a href="#">
+                        <img src="./img/sky.png" alt="">
+                    </a>
+                </div>
+                <div class="play_img swiper-slide">
+                    <a href="#">
+                        <img src="./img/main_play.png" alt="">
+                    </a>
+                </div>
+                <div class="play_img swiper-slide">
+                    <a href="#">
+                        <img src="./img/megaswing.jpg" alt="">
+                    </a>
+                </div>
+                <div class="play_img swiper-slide">
+                    <a href="#">
+                        <img src="./img/drop.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <button class="prev swiper-button-prev">이전</button>
+            <button class="next swiper-button-next">다음</button>
+    </section>
+    <!-- performance 영역 -->
+    <section class="per">
+        <div class="per_inner">
+            <div class="per_title">
+                <p>공연안내</p>
+            </div>
+            <div class="per_text">
+                <p>
+                    이월드 공연은 코로나-19로 인해 <span>모든 공연이 잠정 중단하게 되었습니다.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- farm 영역 -->
+    <section class="farm">
+        <div class="farm_inner">
+            <div class="title">
+                <h2>직접 보고 만지는 살아있는 자연!</h2>
+                <p>새로움이 가득한 동물농장을 소개합니다.</p>
+            </div>
+            <div class="farm_list">
+                <div class="farm_img">
+                    <a href="#">
+                        <img src="./img/pony.png" alt="">
+                    </a>
+                    <div class="farm_text">
+                        <a href="#">
+                            <p>이월드 포니체험</p>
+                            <p>귀엽고 이쁜 포니와 함께 포토타임 및 체험을 즐겨보세요.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="farm_img">
+                    <a href="#">
+                        <img src="./img/deer.png" alt="">
+                    </a>
+                    <div class="farm_text">
+                        <a href="#">
+                            <p>이월드 먹이체험</p>
+                            <p>사랑스러운 동물친구들에게 먹이를 주며 교감해보세요.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="farm_img">
+                    <a href="#">
+                        <img src="./img/turtle.png" alt="">
+                    </a>
+                    <div class="farm_text">
+                        <a href="#">
+                            <p>이월드 실내동물원</p>
+                            <p>작고 아담한 동물들을 만나볼 수 있어요.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- notice 영역 -->
+    <section class="notice">
+        <div class="notice_inner">
+            <div class="board">
+                <div class="board_title">
+                    <b>이월드 소식</b>
+                </div>
+                <div class="board_list">
+                    <a href="#">
+                        <p>아이스링크 동계 방학특강(초등부) <span>2021.12.11</span></p>
+                    </a>
+                    <a href="#">
+                        <p>★겨울시즌패스 전격출시★ <span>2021.11.06</span></p>
+                    </a>
+                    <a href="#">
+                        <p>홈페이지 개인정보처리방침 개정안내(2021.08.27) <span>2021.08.27</span></p>
+                    </a>
+                    <a href="#">
+                        <p>홈페이지 개인정보처리방침 개정안내(2021.07.01)  <span>2021.07.01</span></p>
+                    </a>
+                </div>
+                <div class="more">
+                    <a href="#">냉무</a>
+                </div>
+            </div>
+            <div class="shop">
+                <div class="left">
+                    <div class="shop_title">
+                        <b>온라인샵 <span>바로가기</span></b>
+                    </div>
+                    <div class="shop_text">
+                        <p>이월드에서만 만나볼 수 있는
+                            <span>상품들을 어디에서도 만나볼수 있어요</span>
+                        </p>
+                    </div>
+                    <div class="shop_go">
+                        <a href="#">
+                            <p>자세히보기</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="#">
+                        <img src="./img/gift.png" alt="선물상자">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer 영역 -->
+    <footer class="foot">
+        <div class="foot_inner">
+            <div class="foot_logo">
+                <a href="#">
+                    <img src="./img/foot_logo.png" alt="하단로고">
+                </a>
+            </div>
+            <div class="foot_list">
+                <nav class="foot_menu">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">채용안내</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                        <li><a href="#">이메일주소무단수집거부</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">영상정보처리방침</a></li>
+                    </ul>
+                    <ul class="foot_mo">
+                        <li><a href="#">사이트맵</a></li>
+                        <li><a href="#">이메일주소무단수집거부</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">영상정보처리방침</a></li>
+                    </ul>
+                </nav>
+                <address>
+                    <p>
+                        대구광역시 달서구 두류공원로 200 (주)이월드 l 종합안내전화 053-620-0001 l 연간회원문의 053-620-0100
+                    </p>
+                    <p>
+                        대표이사 : 방병순 l 사업자등록번호 503-81-68487 l 통신판매신고번호 제2011-대구달서-0301호
+                    </p>
+                    <p>
+                        COPYRIGHTⓒ E-WORLD. ALL RIGHTS RESERVED.
+                    </p>
+                </address>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
